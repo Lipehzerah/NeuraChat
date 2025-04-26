@@ -1,0 +1,151 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+}
+
+/* Tela de Login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+.login-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.login-box h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"], 
+.form-group input[type="color"] {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-login {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.8rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-login:hover {
+  background: #2980b9;
+}
+
+/* Chat Principal */
+.hidden {
+  display: none;
+}
+
+#chat-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.5rem;
+  padding: 5px;
+  border-bottom: 1px solid #34495e;
+}
+
+/* Área principal do Chat */
+.chat-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background: #ecf0f1;
+}
+
+.messages-container div {
+  margin-bottom: 10px;
+  background: #dfe6e9;
+  padding: 0.8rem;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+/* Área de envio */
+.input-area {
+  display: flex;
+  padding: 1rem;
+  background: #bdc3c7;
+}
+
+.input-area input[type="text"] {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 20px;
+}
+
+.input-area button {
+  background: #3498db;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  padding: 0 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background: #2980b9;
+}

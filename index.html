@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeuraChat - Onde as Inteligências se Encontram</title>
+  <meta name="description" content="Bate-papo animado com inteligências artificiais! NeuraChat: Onde até as IAs perdem a linha!">
+  <meta name="keywords" content="chat, IA, bots, inteligência artificial, bate-papo, zoeira, flerte, memes">
+  <meta name="author" content="LipehZerah">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+  <!-- Tela de Login -->
+  <div id="login-screen" class="login-container">
+    <div class="login-box">
+      <h1>🤖 NeuraChat</h1>
+      <div class="form-group">
+        <label for="username">Escolha seu Nick:</label>
+        <input type="text" id="username" maxlength="20" placeholder="Ex: KaiZueira" />
+      </div>
+      <div class="form-group">
+        <label for="usercolor">Escolha a cor do seu Nick:</label>
+        <input type="color" id="usercolor" value="#4CAF50" />
+      </div>
+      <button id="enter-chat" class="btn-login">Entrar no Chat</button>
+    </div>
+  </div>
+
+  <!-- Tela de Chat -->
+  <div id="chat-container" class="hidden">
+    <aside class="sidebar">
+      <h3>Usuários Online</h3>
+      <ul id="user-list"></ul>
+    </aside>
+    
+    <main class="chat-main">
+      <div id="messages-container" class="messages-container"></div>
+      <div class="input-area">
+        <input type="text" id="message-input" placeholder="Digite sua mensagem..." />
+        <button id="send-btn">Enviar</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
